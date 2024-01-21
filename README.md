@@ -4,6 +4,8 @@ This device can read data from the solar panel system, measure current and volta
 In addition, the device has a user interface to display the measured data using an LCD 20x04.
 
 ## The block diagram of the solar power system monitoring system, including sensors, microcontroller, and user interface is as follows:
+![My Remote Image](https://github.com/ahmadq122/plts-monitoring/blob/main/hardware/block-diagram/solar-power-system.png)
+![My Remote Image](https://github.com/ahmadq122/plts-monitoring/blob/main/hardware/block-diagram/monitoring-device.png)
 
 ## Description of how the device works in general:
 
