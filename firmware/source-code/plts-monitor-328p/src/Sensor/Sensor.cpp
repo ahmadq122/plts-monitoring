@@ -34,14 +34,18 @@ void Sensor::routineTask()
     else if (sensorAdc < m_spSensorValueAdc[CalPoint_2])
     {
         if (m_m[CalPoint_2 - 1] != 0)
-            sensorValue = (sensorAdc - m_b[CalPoint_2 - 1]) / m_m[CalPoint_2 - 1];
+            sensorValue = ((double)sensorAdc - m_b[CalPoint_2 - 1]) / m_m[CalPoint_2 - 1];
     }
     else
     {
         if (m_m[CalPoint_3 - 1] != 0)
-            sensorValue = (sensorAdc - m_b[CalPoint_3 - 1]) / m_m[CalPoint_3 - 1];
+            sensorValue = ((double)sensorAdc - m_b[CalPoint_3 - 1]) / m_m[CalPoint_3 - 1];
     }
     m_sensorValue = round(sensorValue);
+    // Serial.print("sensorValue ");
+    // Serial.print(sensorValue);
+    // Serial.print(" m_sensorValue ");
+    // Serial.println(m_sensorValue);
 }
 
 void Sensor::initScope()

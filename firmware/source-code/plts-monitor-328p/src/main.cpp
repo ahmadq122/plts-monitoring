@@ -32,6 +32,10 @@ void setup()
   Serial.begin(9600);
   Serial.println("Init");
   //
+  mData = new MachineData;
+  mData->setMachineData(MachineState_Setup);
+  sensorInit();
+  //
   rtcInit();
   //
   sdInit();
@@ -42,10 +46,7 @@ void setup()
   else
     Serial.println("RTC has set the system time");
   //
-  mData = new MachineData;
-  mData->setMachineData(MachineState_Setup);
-  sensorInit();
-  //
+
   lcd.setCursor(0, 1);
   lcd.print("      DONE      ");
   delay(1000);

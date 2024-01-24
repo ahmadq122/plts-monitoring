@@ -1,0 +1,23 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 766d1dbc-8b07-4f68-b453-e8f5a8eb62fa)
+
+  (paper "A4")
+
+  (title_block
+    (title "plts-monitoring-board")
+    (date "2024-01-24")
+    (rev "A")
+    (company "Synapsis.id")
+    (comment 1 "Chalenge Test Electronicks Engineer")
+    (comment 2 "Author: Ahmad Qodri")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)

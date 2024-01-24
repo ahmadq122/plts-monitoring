@@ -44,14 +44,14 @@ bool MachineData::readEeprom()
 void MachineData::initEeprom()
 {
     m_data.spCurrentSensor[CalPoint_1] = 0;
-    m_data.spCurrentSensor[CalPoint_2] = 500;  // 5.00 A
-    m_data.spCurrentSensor[CalPoint_3] = 1000; // 10.00 A
+    m_data.spCurrentSensor[CalPoint_2] = 1000; // 10.00 A
+    m_data.spCurrentSensor[CalPoint_3] = 2000; // 20.00 A
     m_data.spCurrentSensorAdc[CalPoint_1] = 0; // 0~1023
     m_data.spCurrentSensorAdc[CalPoint_2] = 512;
     m_data.spCurrentSensorAdc[CalPoint_3] = 1023;
     m_data.spVoltageSensor[CalPoint_1] = 0;
-    m_data.spVoltageSensor[CalPoint_2] = 1200;
-    m_data.spVoltageSensor[CalPoint_3] = 2400;
+    m_data.spVoltageSensor[CalPoint_2] = 1200; // 12.00 V
+    m_data.spVoltageSensor[CalPoint_3] = 2400; // 24.00 V
     m_data.spVoltageSensorAdc[CalPoint_1] = 0; // 0~1023
     m_data.spVoltageSensorAdc[CalPoint_2] = 512;
     m_data.spVoltageSensorAdc[CalPoint_3] = 1023;
