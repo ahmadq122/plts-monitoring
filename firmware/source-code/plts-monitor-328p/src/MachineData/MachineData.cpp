@@ -75,25 +75,25 @@ uint8_t MachineData::getMachineState() const { return m_machineState; }
 
 int MachineData::getSpCurrentSensor(uint8_t point)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     return m_data.spCurrentSensor[point];
 }
 
 int MachineData::getSpCurrentSensorAdc(uint8_t point)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     return m_data.spCurrentSensorAdc[point];
 }
 
 int MachineData::getSpVoltageSensor(uint8_t point)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     return m_data.spVoltageSensor[point];
 }
 
 int MachineData::getSpVoltageSensorAdc(uint8_t point)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     return m_data.spVoltageSensorAdc[point];
 }
 
@@ -106,7 +106,7 @@ void MachineData::setMachineData(uint8_t newValue)
 
 void MachineData::setSpCurrentSensor(uint8_t point, int newValue)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     if (m_data.spCurrentSensor[point] == newValue)
         return;
     m_data.spCurrentSensor[point] = newValue;
@@ -114,7 +114,7 @@ void MachineData::setSpCurrentSensor(uint8_t point, int newValue)
 
 void MachineData::setSpCurrentSensorAdc(uint8_t point, int newValue)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     if (m_data.spCurrentSensorAdc[point] == newValue)
         return;
     m_data.spCurrentSensorAdc[point] = newValue;
@@ -122,7 +122,7 @@ void MachineData::setSpCurrentSensorAdc(uint8_t point, int newValue)
 
 void MachineData::setSpVoltageSensor(uint8_t point, int newValue)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     if (m_data.spVoltageSensor[point] == newValue)
         return;
     m_data.spVoltageSensor[point] = newValue;
@@ -130,7 +130,7 @@ void MachineData::setSpVoltageSensor(uint8_t point, int newValue)
 
 void MachineData::setSpVoltageSensorAdc(uint8_t point, int newValue)
 {
-    point = constrain(point, 0, CalPoint_Total);
+    point = constrain(point, CalPoint_1, CalPoint_3);
     if (m_data.spVoltageSensorAdc[point] == newValue)
         return;
     m_data.spVoltageSensorAdc[point] = newValue;
