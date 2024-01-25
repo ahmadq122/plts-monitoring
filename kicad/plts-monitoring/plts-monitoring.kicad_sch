@@ -1642,127 +1642,57 @@
         )
       )
     )
-    (symbol "Switch:SW_Push_Dual" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (at 0 7.62 0)
+    (symbol "Switch:SW_Push" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "SW" (at 1.27 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "SW_Push" (at 0 -1.524 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "SW_Push_Dual" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 7.62 0)
+      (property "Footprint" "" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "~" (at 0 0 0)
+      (property "Datasheet" "~" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Push button switch, generic, symbol, four pins" (at 0 0 0)
+      (property "ki_description" "Push button switch, generic, two pins" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "SW_Push_Dual_0_1"
-        (circle (center -2.032 -2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center -2.032 2.54) (radius 0.508)
+      (symbol "SW_Push_0_1"
+        (circle (center -2.032 0) (radius 0.508)
           (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 0 -0.508)
-            (xy 0 -1.016)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0.508)
-            (xy 0 0)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.016)
-            (xy 0 1.524)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.032)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
+            (xy 0 1.27)
             (xy 0 3.048)
-            (xy 0 3.556)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
         (polyline
           (pts
-            (xy 0 3.81)
-            (xy 0 5.588)
+            (xy 2.54 1.27)
+            (xy -2.54 1.27)
           )
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (polyline
-          (pts
-            (xy 2.54 -1.27)
-            (xy -2.54 -1.27)
-          )
+        (circle (center 2.032 0) (radius 0.508)
           (stroke (width 0) (type default))
           (fill (type none))
         )
-        (polyline
-          (pts
-            (xy 2.54 3.81)
-            (xy -2.54 3.81)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 -2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 2.032 2.54) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (pin passive line (at -5.08 2.54 0) (length 2.54)
+        (pin passive line (at -5.08 0 0) (length 2.54)
           (name "1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 5.08 2.54 180) (length 2.54)
+        (pin passive line (at 5.08 0 180) (length 2.54)
           (name "2" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at -5.08 -2.54 0) (length 2.54)
-          (name "3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 5.08 -2.54 180) (length 2.54)
-          (name "4" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-      (symbol "SW_Push_Dual_1_1"
-        (rectangle (start -3.175 5.715) (end 3.175 -4.445)
-          (stroke (width 0) (type default))
-          (fill (type background))
         )
       )
     )
@@ -2025,6 +1955,46 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
   )
 
   (junction (at 320.294 32.004) (diameter 0) (color 0 0 0 0)
@@ -2102,14 +2072,17 @@
   (junction (at 275.082 149.098) (diameter 0) (color 0 0 0 0)
     (uuid 90374187-dca2-4f9c-b8cd-48468c28e3ea)
   )
-  (junction (at 148.59 29.21) (diameter 0) (color 0 0 0 0)
-    (uuid 91093124-7713-4f5e-baa5-0d7ac2ebbda1)
-  )
   (junction (at 228.346 32.512) (diameter 0) (color 0 0 0 0)
     (uuid 979c989b-aca5-4636-914c-8a2e4335d780)
   )
+  (junction (at 40.386 224.028) (diameter 0) (color 0 0 0 0)
+    (uuid 9a36e671-aa4b-4455-b4ca-ae2d4c9f9152)
+  )
   (junction (at 329.184 32.004) (diameter 0) (color 0 0 0 0)
     (uuid 9ac3e0c5-0f87-4bea-83c3-d8437a303e1a)
+  )
+  (junction (at 148.59 29.21) (diameter 0) (color 0 0 0 0)
+    (uuid a398a8d5-f521-4d0a-9a42-f7b2b38ac43f)
   )
   (junction (at 338.074 54.102) (diameter 0) (color 0 0 0 0)
     (uuid b0be2ad9-9d79-43cb-ae3b-92ceba950634)
@@ -2183,9 +2156,6 @@
   (junction (at 203.962 141.478) (diameter 0) (color 0 0 0 0)
     (uuid f13db5b6-7989-4b51-84be-873c1a854b59)
   )
-  (junction (at 137.16 107.95) (diameter 0) (color 0 0 0 0)
-    (uuid f44ba4c2-4327-484b-9f81-83f85dfaa738)
-  )
   (junction (at 50.8 27.94) (diameter 0) (color 0 0 0 0)
     (uuid f744d1e7-f40b-4969-a645-24788fdfdab7)
   )
@@ -2193,6 +2163,10 @@
     (uuid fd407486-219f-426d-8e34-053b986c5a33)
   )
 
+  (wire (pts (xy 379.73 137.922) (xy 377.952 137.922))
+    (stroke (width 0) (type default))
+    (uuid 0041c08b-b75c-40dc-a0a3-122549421eab)
+  )
   (wire (pts (xy 225.806 51.816) (xy 234.95 51.816))
     (stroke (width 0) (type default))
     (uuid 007207a0-e887-4884-8269-f030de043d33)
@@ -2200,10 +2174,6 @@
   (wire (pts (xy 135.382 217.424) (xy 135.382 219.964))
     (stroke (width 0) (type default))
     (uuid 00aa26b9-fcb6-4354-8ae5-a35e72558207)
-  )
-  (wire (pts (xy 137.16 102.87) (xy 137.16 107.95))
-    (stroke (width 0) (type default))
-    (uuid 017107c6-546f-4013-9721-dc548e1b9711)
   )
   (wire (pts (xy 123.19 172.72) (xy 123.19 175.26))
     (stroke (width 0) (type default))
@@ -2231,7 +2201,7 @@
   )
   (wire (pts (xy 143.51 29.21) (xy 148.59 29.21))
     (stroke (width 0) (type default))
-    (uuid 06f32ac1-76d1-4265-88d4-5095288f3b7c)
+    (uuid 075c011e-cad6-425c-8c7a-10146f6a6ff2)
   )
   (wire (pts (xy 139.192 230.124) (xy 139.192 235.204))
     (stroke (width 0) (type default))
@@ -2284,10 +2254,6 @@
   (wire (pts (xy 74.93 105.41) (xy 78.74 105.41))
     (stroke (width 0) (type default))
     (uuid 13596a1c-cbff-464b-8fab-abfd2eddedec)
-  )
-  (wire (pts (xy 115.57 107.95) (xy 115.57 102.87))
-    (stroke (width 0) (type default))
-    (uuid 146e8c5c-e2a8-4fd1-aa77-b880dbe3c7dd)
   )
   (wire (pts (xy 124.46 39.37) (xy 135.89 39.37))
     (stroke (width 0) (type default))
@@ -2477,13 +2443,29 @@
     (stroke (width 0) (type default))
     (uuid 3b9be442-e48a-400d-928b-ddb394a0d5e0)
   )
+  (wire (pts (xy 40.386 220.472) (xy 40.386 224.028))
+    (stroke (width 0) (type default))
+    (uuid 3bd0d3ff-b3b8-43c1-93e9-c00d3028d1e0)
+  )
   (wire (pts (xy 115.57 121.92) (xy 123.19 121.92))
     (stroke (width 0) (type default))
     (uuid 3e6cdf01-35e2-45f0-8572-9c352099a34d)
   )
+  (wire (pts (xy 333.248 152.908) (xy 333.248 156.464))
+    (stroke (width 0) (type default))
+    (uuid 3e72c1d3-9b09-4f56-bf2f-3cf90ce68331)
+  )
   (wire (pts (xy 307.848 56.642) (xy 342.392 56.642))
     (stroke (width 0) (type default))
     (uuid 413c5476-c0d7-4644-8ef8-196aecf90880)
+  )
+  (wire (pts (xy 215.646 77.216) (xy 215.646 78.486))
+    (stroke (width 0) (type default))
+    (uuid 4477e78d-6d53-442d-bb19-341e3dda61f6)
+  )
+  (wire (pts (xy 379.476 150.622) (xy 377.952 150.622))
+    (stroke (width 0) (type default))
+    (uuid 46b4f6a9-1b9e-47dd-a92a-ed7799c73afa)
   )
   (wire (pts (xy 115.57 132.08) (xy 123.19 132.08))
     (stroke (width 0) (type default))
@@ -2560,6 +2542,10 @@
   (wire (pts (xy 203.962 141.478) (xy 210.566 141.478))
     (stroke (width 0) (type default))
     (uuid 53b341af-269d-4f09-a87b-597fbf1a336b)
+  )
+  (wire (pts (xy 377.952 163.83) (xy 379.73 163.83))
+    (stroke (width 0) (type default))
+    (uuid 53e2e529-a598-4e8b-b5d3-44c407429405)
   )
   (wire (pts (xy 329.184 32.004) (xy 338.074 32.004))
     (stroke (width 0) (type default))
@@ -2793,6 +2779,10 @@
     (stroke (width 0) (type default))
     (uuid 92d6d539-5001-46bb-ad09-f183fe485f3f)
   )
+  (wire (pts (xy 377.952 157.734) (xy 379.73 157.734))
+    (stroke (width 0) (type default))
+    (uuid 93077782-bcef-48a0-91d6-b6cbcda44cf3)
+  )
   (wire (pts (xy 74.93 143.51) (xy 78.74 143.51))
     (stroke (width 0) (type default))
     (uuid 94730af1-da0b-47ba-ad36-8b257f67b525)
@@ -2889,10 +2879,6 @@
     (stroke (width 0) (type default))
     (uuid ab487737-0b09-4223-aec5-3b1c2c2288a1)
   )
-  (wire (pts (xy 132.08 107.95) (xy 137.16 107.95))
-    (stroke (width 0) (type default))
-    (uuid abb18cc3-6ea8-44b8-9f37-f51ee055398c)
-  )
   (wire (pts (xy 308.102 66.802) (xy 329.184 66.802))
     (stroke (width 0) (type default))
     (uuid abb98c40-010a-44a0-8f9c-86d64fd3f3e4)
@@ -2961,7 +2947,7 @@
     (stroke (width 0) (type default))
     (uuid bc06904b-a329-4484-9fd4-d6129b7996cb)
   )
-  (wire (pts (xy 137.16 107.95) (xy 137.16 110.49))
+  (wire (pts (xy 137.16 102.87) (xy 137.16 110.49))
     (stroke (width 0) (type default))
     (uuid bd4a0cc2-d0ca-4dc0-bad4-ca9e6eb27468)
   )
@@ -3021,10 +3007,6 @@
     (stroke (width 0) (type default))
     (uuid cf1143fe-a62c-4ca4-828d-38502c4f8937)
   )
-  (wire (pts (xy 115.57 107.95) (xy 121.92 107.95))
-    (stroke (width 0) (type default))
-    (uuid d0bc06ea-7df3-4263-8460-125343132b67)
-  )
   (wire (pts (xy 254 240.03) (xy 254 237.998))
     (stroke (width 0) (type default))
     (uuid d26a500f-dcc1-4af1-9e44-7c4621899fb4)
@@ -3077,6 +3059,10 @@
     (stroke (width 0) (type default))
     (uuid dae21a35-a7a0-46be-990a-62422b6fab51)
   )
+  (wire (pts (xy 333.248 131.572) (xy 333.248 137.668))
+    (stroke (width 0) (type default))
+    (uuid dcf73360-f855-444d-8a47-8739881f0728)
+  )
   (wire (pts (xy 210.566 141.478) (xy 210.566 143.256))
     (stroke (width 0) (type default))
     (uuid dd40c1c0-9a59-4f12-a9f5-82d907336133)
@@ -3089,7 +3075,7 @@
     (stroke (width 0) (type default))
     (uuid dfd9a0c2-1a2a-4674-b9fb-e6e33f311709)
   )
-  (wire (pts (xy 217.678 224.79) (xy 217.678 227.076))
+  (wire (pts (xy 217.678 224.79) (xy 217.678 227.838))
     (stroke (width 0) (type default))
     (uuid e205783d-0e49-489f-8e58-476e3eb9f44d)
   )
@@ -3112,6 +3098,10 @@
   (wire (pts (xy 50.8 38.1) (xy 50.8 43.18))
     (stroke (width 0) (type default))
     (uuid e71b529f-436c-4fb0-9c02-c17bec689d74)
+  )
+  (wire (pts (xy 148.59 29.21) (xy 148.59 30.48))
+    (stroke (width 0) (type default))
+    (uuid e9c2a567-2176-42d5-9bf5-ce2ab61e7243)
   )
   (wire (pts (xy 123.19 121.92) (xy 127 121.92))
     (stroke (width 0) (type default))
@@ -3145,6 +3135,10 @@
     (stroke (width 0) (type default))
     (uuid f3e1e2cd-5434-4028-bae3-e1b977532180)
   )
+  (wire (pts (xy 379.73 144.018) (xy 377.952 144.018))
+    (stroke (width 0) (type default))
+    (uuid f3fe9d8c-ccf0-40d6-a711-1e62bb5f008c)
+  )
   (wire (pts (xy 302.26 42.164) (xy 302.26 44.958))
     (stroke (width 0) (type default))
     (uuid f4fb8287-0b3d-4728-8416-c04b26a667b3)
@@ -3173,10 +3167,6 @@
     (stroke (width 0) (type default))
     (uuid fa202eac-9ba8-4bcc-976f-bc2dff9ed4a5)
   )
-  (wire (pts (xy 148.59 22.86) (xy 148.59 29.21))
-    (stroke (width 0) (type default))
-    (uuid fad84485-5a58-4be1-a95b-0b4302c64c0c)
-  )
   (wire (pts (xy 115.57 102.87) (xy 121.92 102.87))
     (stroke (width 0) (type default))
     (uuid fadf4fa9-b35f-4edf-9efb-cc9102e02c14)
@@ -3193,7 +3183,7 @@
     (stroke (width 0) (type default))
     (uuid fc3e98db-259d-4789-86a9-c809fcc58258)
   )
-  (wire (pts (xy 148.59 30.48) (xy 148.59 29.21))
+  (wire (pts (xy 148.59 22.86) (xy 148.59 29.21))
     (stroke (width 0) (type default))
     (uuid fccb5fd5-3876-46f2-aeae-83b72b02570c)
   )
@@ -3508,6 +3498,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "V_SolarPanel" (shape input) (at 379.73 157.734 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 9e046701-a35f-4671-8943-4cfc849ea912)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 395.0521 157.734 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "XTAL1" (shape passive) (at 78.74 115.57 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid a4d0c81f-9983-4b38-9ad0-bf27225e6fdb)
@@ -3635,6 +3632,31 @@
     )
   )
 
+  (symbol (lib_id "power:+5V") (at 333.248 131.572 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 00cf449a-ee44-4fad-b523-ab7b387eb0fa)
+    (property "Reference" "#PWR034" (at 333.248 135.382 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 333.248 126.492 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 333.248 131.572 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 333.248 131.572 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 69473494-fe18-445f-adfe-3b8c78cd95f8))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:Battery_Cell") (at 40.386 237.998 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 012208c4-63ca-4d57-80c3-d42f4197c35c)
@@ -3664,7 +3686,7 @@
   (symbol (lib_id "Device:C") (at 210.312 224.79 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 029a09ca-a28d-4503-98a5-9743ff4352a0)
-    (property "Reference" "C9" (at 209.042 220.98 0)
+    (property "Reference" "C8" (at 209.042 220.98 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 211.582 220.98 0)
@@ -3681,7 +3703,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C9") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -3690,7 +3712,7 @@
   (symbol (lib_id "Device:C") (at 148.59 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 06f617bf-b4a5-4d03-848e-c66bc7733e07)
-    (property "Reference" "C6" (at 152.4 33.02 0)
+    (property "Reference" "C7" (at 152.4 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22uF" (at 152.4 35.56 0)
@@ -3707,7 +3729,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C6") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -3716,7 +3738,7 @@
   (symbol (lib_id "power:GND") (at 123.19 175.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0c2ad78b-1d1f-4c18-a5c8-e1d30460f9b0)
-    (property "Reference" "#PWR017" (at 123.19 181.61 0)
+    (property "Reference" "#PWR013" (at 123.19 181.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 123.19 180.34 0)
@@ -3732,7 +3754,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -3741,7 +3763,7 @@
   (symbol (lib_id "power:+5V") (at 97.79 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 16e93171-1777-43ba-9656-00dc4933102e)
-    (property "Reference" "#PWR013" (at 101.6 54.61 0)
+    (property "Reference" "#PWR09" (at 101.6 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 93.98 54.61 90)
@@ -3757,7 +3779,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3766,7 +3788,7 @@
   (symbol (lib_id "power:GND") (at 137.16 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1715cb1d-e256-4143-9cda-d0fcc18b81df)
-    (property "Reference" "#PWR012" (at 137.16 116.84 0)
+    (property "Reference" "#PWR018" (at 137.16 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 115.57 0)
@@ -3782,7 +3804,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -3791,7 +3813,7 @@
   (symbol (lib_id "power:+5V") (at 124.46 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 19208464-9125-450d-8ed1-0c66393036fc)
-    (property "Reference" "#PWR07" (at 124.46 26.67 0)
+    (property "Reference" "#PWR014" (at 124.46 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 124.46 17.78 0)
@@ -3807,7 +3829,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -3816,7 +3838,7 @@
   (symbol (lib_id "power:GND") (at 124.46 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c117231-2c4e-41e7-8e79-86d0570b64ba)
-    (property "Reference" "#PWR014" (at 130.81 54.61 0)
+    (property "Reference" "#PWR015" (at 130.81 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 128.27 54.61 90)
@@ -3832,7 +3854,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3841,7 +3863,7 @@
   (symbol (lib_id "Device:R") (at 115.57 96.52 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21bcf502-2e3f-4ee0-afba-4880bf106d7b)
-    (property "Reference" "R2" (at 113.03 95.25 0)
+    (property "Reference" "R1" (at 113.03 95.25 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 113.03 97.79 0)
@@ -3858,7 +3880,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -3867,7 +3889,7 @@
   (symbol (lib_id "power:GND") (at 275.082 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22bc1b99-4e86-4ce2-acb4-d64419139255)
-    (property "Reference" "#PWR034" (at 275.082 172.72 0)
+    (property "Reference" "#PWR031" (at 275.082 172.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 275.082 171.45 0)
@@ -3883,7 +3905,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -3892,7 +3914,7 @@
   (symbol (lib_id "Device:C") (at 254 243.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2477550b-4a67-41bf-a39e-c9d01ef16e8b)
-    (property "Reference" "C11" (at 257.81 242.57 0)
+    (property "Reference" "C12" (at 257.81 242.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1nF" (at 257.81 245.11 0)
@@ -3909,7 +3931,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C11") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3943,7 +3965,7 @@
   (symbol (lib_id "Amplifier_Operational:OPA2376xxD") (at 289.814 146.558 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 25fabc8c-456e-46a6-a5f5-1f0c2f6b2800)
-    (property "Reference" "U5" (at 290.068 139.192 0)
+    (property "Reference" "U7" (at 290.068 139.192 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "OPA2376xxD" (at 294.132 141.478 0)
@@ -3966,7 +3988,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U5") (unit 1)
+          (reference "U7") (unit 1)
         )
       )
     )
@@ -3975,7 +3997,7 @@
   (symbol (lib_id "power:+3.3V") (at 324.866 28.956 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a2c2d82-4fa6-4167-a67d-b97e04dd4f16)
-    (property "Reference" "#PWR020" (at 324.866 32.766 0)
+    (property "Reference" "#PWR033" (at 324.866 32.766 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 324.866 23.876 0)
@@ -3991,7 +4013,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -4000,7 +4022,7 @@
   (symbol (lib_id "Device:R") (at 116.84 54.61 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2add618c-b34a-4a43-acb9-e70d4128973d)
-    (property "Reference" "R3" (at 118.11 49.53 90)
+    (property "Reference" "R2" (at 118.11 49.53 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330" (at 118.11 52.07 90)
@@ -4017,7 +4039,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R3") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4026,7 +4048,7 @@
   (symbol (lib_id "power:+5V") (at 249.428 130.556 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2b0561aa-cbf7-44b7-b3a8-e9265a64bdce)
-    (property "Reference" "#PWR032" (at 249.428 134.366 0)
+    (property "Reference" "#PWR029" (at 249.428 134.366 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 249.428 125.476 0)
@@ -4042,7 +4064,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -4051,7 +4073,7 @@
   (symbol (lib_id "power:GND") (at 137.16 134.62 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2c88fd1b-4e1e-4c3e-8f48-b76d4877c166)
-    (property "Reference" "#PWR015" (at 137.16 140.97 0)
+    (property "Reference" "#PWR019" (at 137.16 140.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 137.16 139.7 0)
@@ -4067,7 +4089,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4076,7 +4098,7 @@
   (symbol (lib_id "power:GND") (at 234.95 53.848 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f4c5a9d-dbe5-4ddc-9206-d5c175155e10)
-    (property "Reference" "#PWR024" (at 234.95 60.198 0)
+    (property "Reference" "#PWR028" (at 234.95 60.198 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 234.95 58.928 0)
@@ -4092,7 +4114,33 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR028") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Switch:SW_Push") (at 127 102.87 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 39612389-4200-4cd9-8250-586b7a9d7b26)
+    (property "Reference" "SW1" (at 127 95.25 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "SW_Push" (at 127 97.79 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" (at 127 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 127 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid aace325e-7215-464a-bf25-2269c4057c57))
+    (pin "2" (uuid 833a44f9-317d-41b1-8b1f-ab4d5e47bf41))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -4101,7 +4149,7 @@
   (symbol (lib_id "power:GND") (at 338.328 75.184 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3be273dc-1d7e-4e2e-990b-d95e1d19067a)
-    (property "Reference" "#PWR019" (at 338.328 81.534 0)
+    (property "Reference" "#PWR036" (at 338.328 81.534 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 338.328 79.502 0)
@@ -4117,7 +4165,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -4126,7 +4174,7 @@
   (symbol (lib_id "power:GND") (at 198.628 226.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 48e57db7-904c-4724-9d19-41466a280db0)
-    (property "Reference" "#PWR030" (at 198.628 232.41 0)
+    (property "Reference" "#PWR021" (at 198.628 232.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 198.628 231.14 0)
@@ -4142,7 +4190,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -4151,7 +4199,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 22.86 30.48 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 49f52f33-eab2-472c-9b63-6f7d5bf66a61)
-    (property "Reference" "J2" (at 24.13 25.4 0)
+    (property "Reference" "J1" (at 24.13 25.4 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "7-40VDC" (at 19.05 25.4 90)
@@ -4168,7 +4216,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "J2") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -4177,7 +4225,7 @@
   (symbol (lib_id "Device:C") (at 223.012 146.812 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a5a4f27-5818-4359-a250-477bac13d79a)
-    (property "Reference" "C13" (at 226.822 145.542 0)
+    (property "Reference" "C10" (at 226.822 145.542 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 226.822 148.082 0)
@@ -4194,7 +4242,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C13") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -4203,7 +4251,7 @@
   (symbol (lib_id "Device:R") (at 234.442 237.998 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e498759-db4c-44ef-a178-55b2fa6f8814)
-    (property "Reference" "R9" (at 235.712 235.458 0)
+    (property "Reference" "R7" (at 235.712 235.458 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "2k" (at 233.172 235.458 0)
@@ -4220,7 +4268,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R9") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -4229,7 +4277,7 @@
   (symbol (lib_id "Sensor_Current:ACS712xLCTR-30A") (at 217.678 237.998 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 50185c8d-df8e-4460-aa48-b08835bcf6a9)
-    (property "Reference" "U3" (at 219.8721 225.298 0)
+    (property "Reference" "U5" (at 219.8721 225.298 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "ACS712xLCTR-30A" (at 219.8721 227.838 0)
@@ -4252,35 +4300,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U3") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Switch:SW_Push_Dual") (at 127 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 571d3016-7569-4384-b320-53c16bf8cd25)
-    (property "Reference" "SW2" (at 127 95.25 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "SW_Push_Dual" (at 127 97.79 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" (at 127 97.79 0)
+  (symbol (lib_id "power:PWR_FLAG") (at 377.952 137.922 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 509ae9ab-14a3-4cde-ac6a-f5eaccc433b5)
+    (property "Reference" "#FLG02" (at 376.047 137.922 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 127 105.41 0)
+    (property "Value" "PWR_FLAG" (at 369.57 137.922 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 377.952 137.922 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b5523fba-67fe-4634-9d63-fb8101a180f0))
-    (pin "4" (uuid e09e5efb-b7e9-47b6-9b2a-77c000bb6a90))
-    (pin "2" (uuid 6bd5446e-6526-4cc1-b211-1fe258a1c3e6))
-    (pin "3" (uuid 343df45e-a603-4642-abf5-ac6a1365cd05))
+    (property "Datasheet" "~" (at 377.952 137.922 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0b69198a-b085-4aa5-8bf7-17f9f4236376))
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "SW2") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -4289,7 +4334,7 @@
   (symbol (lib_id "power:GND") (at 59.69 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5b3f8017-a84a-49ec-b2c6-a1b02654ec69)
-    (property "Reference" "#PWR09" (at 59.69 177.8 0)
+    (property "Reference" "#PWR07" (at 59.69 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 176.53 0)
@@ -4305,7 +4350,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -4314,7 +4359,7 @@
   (symbol (lib_id "Device:R") (at 131.572 226.314 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c7918df-c982-4933-9b7e-be338d0d72a9)
-    (property "Reference" "R4" (at 129.032 225.044 0)
+    (property "Reference" "R3" (at 129.032 225.044 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 129.032 227.584 0)
@@ -4331,7 +4376,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -4340,7 +4385,7 @@
   (symbol (lib_id "Device:C") (at 302.26 38.354 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 632f6870-ce2b-4949-acca-39ac3b205784)
-    (property "Reference" "C7" (at 298.45 37.084 0)
+    (property "Reference" "C16" (at 298.45 37.084 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 298.45 39.624 0)
@@ -4357,7 +4402,57 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C7") (unit 1)
+          (reference "C16") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+BATT") (at 379.476 150.622 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 63ceef5b-53d8-4340-a88a-411d876343f5)
+    (property "Reference" "#PWR037" (at 375.666 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (at 386.334 150.622 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 379.476 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 379.476 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 24b1d65b-6224-4051-bb03-8c364dac062e))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR037") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 377.952 144.018 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 66b18eae-e81b-4116-a3d9-46778a236c4c)
+    (property "Reference" "#FLG03" (at 376.047 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 369.57 144.018 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 377.952 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 377.952 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 6a28e3e4-b489-4ed1-9b01-1d1c82aec8f2))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#FLG03") (unit 1)
         )
       )
     )
@@ -4393,7 +4488,7 @@
   (symbol (lib_id "power:GND") (at 388.62 75.438 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6df25174-03c3-48ce-a51e-9faccbc5352e)
-    (property "Reference" "#PWR021" (at 388.62 81.788 0)
+    (property "Reference" "#PWR041" (at 388.62 81.788 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 388.62 79.756 0)
@@ -4409,7 +4504,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR041") (unit 1)
         )
       )
     )
@@ -4418,7 +4513,7 @@
   (symbol (lib_id "power:GND") (at 199.644 54.864 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7286feaf-5636-46ab-8854-b9648fa13703)
-    (property "Reference" "#PWR025" (at 199.644 61.214 0)
+    (property "Reference" "#PWR022" (at 199.644 61.214 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 199.644 59.944 0)
@@ -4434,7 +4529,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -4443,7 +4538,7 @@
   (symbol (lib_id "Device:C") (at 232.156 245.364 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 732675b4-3f4e-4306-8860-6bbe726d04f5)
-    (property "Reference" "C10" (at 235.966 244.094 0)
+    (property "Reference" "C11" (at 235.966 244.094 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1nF" (at 235.966 246.634 0)
@@ -4460,7 +4555,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C10") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4509,7 +4604,7 @@
   (symbol (lib_id "Device:R") (at 329.184 38.862 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7569104d-fa57-4bb1-adfc-e40d31c2a6b9)
-    (property "Reference" "R6" (at 326.644 37.592 0)
+    (property "Reference" "R15" (at 326.644 37.592 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 326.644 40.132 0)
@@ -4526,7 +4621,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R6") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
@@ -4541,7 +4636,7 @@
     (property "Value" "100uH" (at 92.71 30.48 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_Bourns_SRR1210A" (at 92.71 33.02 0)
+    (property "Footprint" "Inductor_SMD:L_Bourns_SRP7028A_7.3x6.6mm" (at 92.71 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 92.71 33.02 0)
@@ -4561,7 +4656,7 @@
   (symbol (lib_id "Device:R") (at 338.074 38.862 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 773a629f-a41b-40ad-a351-2371fa8acb80)
-    (property "Reference" "R1" (at 335.534 37.592 0)
+    (property "Reference" "R16" (at 335.534 37.592 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 335.534 40.132 0)
@@ -4578,7 +4673,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R1") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -4587,7 +4682,7 @@
   (symbol (lib_id "power:+5V") (at 99.06 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 78fe7ba7-8777-45bf-bab0-495fd5070779)
-    (property "Reference" "#PWR01" (at 99.06 26.67 0)
+    (property "Reference" "#PWR010" (at 99.06 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 99.06 17.78 0)
@@ -4603,7 +4698,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -4668,13 +4763,13 @@
   (symbol (lib_id "Connector:AVR-ISP-10") (at 125.73 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b15db6f-1fe1-4c75-85fc-0708846f915b)
-    (property "Reference" "J3" (at 116.84 160.02 0)
+    (property "Reference" "J2" (at 116.84 160.02 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "AVR-ISP-10" (at 116.84 162.56 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "" (at 119.38 161.29 90)
+    (property "Footprint" "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" (at 119.38 161.29 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 93.345 176.53 0)
@@ -4693,7 +4788,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -4702,7 +4797,7 @@
   (symbol (lib_id "Device:R") (at 203.962 135.636 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7c6e191b-f4c3-4802-ac0b-bf14dc3f2f4b)
-    (property "Reference" "R12" (at 201.422 134.366 0)
+    (property "Reference" "R5" (at 201.422 134.366 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 201.422 136.906 0)
@@ -4719,7 +4814,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R12") (unit 1)
+          (reference "R5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 215.646 78.486 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7cd9de1a-0bcf-4c72-bd17-0638c544b8e0)
+    (property "Reference" "#PWR025" (at 215.646 84.836 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 215.646 83.566 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 215.646 78.486 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 215.646 78.486 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fe090b9e-2ef2-4dc8-9023-0b06907e20c6))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -4728,7 +4848,7 @@
   (symbol (lib_id "power:+3.3V") (at 148.59 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d22385d-b123-44d3-90df-84d0e06b1340)
-    (property "Reference" "#PWR03" (at 148.59 26.67 0)
+    (property "Reference" "#PWR020" (at 148.59 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 148.59 17.78 0)
@@ -4744,7 +4864,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -4753,7 +4873,7 @@
   (symbol (lib_id "Device:R") (at 267.97 149.098 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7d2d5848-43c3-43e4-83d9-8dd01b6a79de)
-    (property "Reference" "R14" (at 266.7 151.638 0)
+    (property "Reference" "R10" (at 266.7 151.638 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 269.24 151.638 0)
@@ -4770,7 +4890,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R14") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -4779,7 +4899,7 @@
   (symbol (lib_id "power:GND") (at 135.89 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d5a3c59-fcfe-43ed-bf47-af4a30450f88)
-    (property "Reference" "#PWR06" (at 135.89 46.99 0)
+    (property "Reference" "#PWR017" (at 135.89 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 45.72 0)
@@ -4795,7 +4915,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -4804,7 +4924,7 @@
   (symbol (lib_id "Device:R") (at 320.294 38.862 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7ecef205-6c6c-4ae3-a36a-390a636f216f)
-    (property "Reference" "R7" (at 317.754 37.592 0)
+    (property "Reference" "R14" (at 317.754 37.592 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 317.754 40.132 0)
@@ -4821,7 +4941,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R7") (unit 1)
+          (reference "R14") (unit 1)
         )
       )
     )
@@ -4830,7 +4950,7 @@
   (symbol (lib_id "power:+5V") (at 71.12 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7f3aef08-59d0-45ba-8f08-b55d003cc037)
-    (property "Reference" "#PWR027" (at 71.12 224.79 0)
+    (property "Reference" "#PWR08" (at 71.12 224.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 71.12 215.9 0)
@@ -4846,7 +4966,39 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Amplifier_Operational:OPA2376xxD") (at 335.788 145.288 0) (unit 3)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 7f69e1e6-a527-4eac-8d15-f9f461eb0b3c)
+    (property "Reference" "U7" (at 336.042 137.922 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "OPA2376xxD" (at 340.106 140.208 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Package_SO:TSSOP-8_3x3mm_P0.65mm" (at 335.788 145.288 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa376.pdf" (at 335.788 145.288 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid a3407559-f0dd-49fc-9756-b9f623aaabc1))
+    (pin "6" (uuid bd629f40-a581-4902-894e-c1fec427efda))
+    (pin "4" (uuid 40a9fcd1-0d90-4ee2-9704-3cfed4da9bd4))
+    (pin "1" (uuid af7c29ce-d7d8-40b4-885f-5a4702f1ac2d))
+    (pin "5" (uuid ac19601f-7aed-46f3-817d-be662488b47f))
+    (pin "8" (uuid 345d6e62-cc1b-4c94-8e28-8c8cfb62fb21))
+    (pin "7" (uuid 0a1e9bdb-d85a-47f9-93ec-5a4a213bfe80))
+    (pin "3" (uuid e7335ad1-ebf4-49ab-9557-aceeab01f26c))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "U7") (unit 3)
         )
       )
     )
@@ -4855,7 +5007,7 @@
   (symbol (lib_id "power:+5V") (at 217.678 221.742 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83e55763-d96f-46e3-b760-ed4b4c30a89a)
-    (property "Reference" "#PWR028" (at 217.678 225.552 0)
+    (property "Reference" "#PWR026" (at 217.678 225.552 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 217.678 216.662 0)
@@ -4871,7 +5023,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -4880,7 +5032,7 @@
   (symbol (lib_id "Timer_RTC:DS3232M") (at 71.12 237.49 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 85c9ae18-f96c-4d07-bee6-96bacb33bca4)
-    (property "Reference" "U2" (at 75.438 249.682 0)
+    (property "Reference" "U3" (at 75.438 249.682 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DS3232M" (at 81.534 247.396 0)
@@ -4903,7 +5055,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U2") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -4912,7 +5064,7 @@
   (symbol (lib_id "Device:C") (at 275.082 159.766 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86194a47-1688-4bb7-97b3-9b1d4fa0c86b)
-    (property "Reference" "C15" (at 271.272 161.036 0)
+    (property "Reference" "C14" (at 271.272 161.036 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100pF" (at 271.272 158.496 0)
@@ -4929,7 +5081,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C15") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -4964,7 +5116,7 @@
   (symbol (lib_id "Device:C") (at 130.81 121.92 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ae78f75-fe3f-4010-afe8-34eba7c967aa)
-    (property "Reference" "C1" (at 128.27 120.65 90)
+    (property "Reference" "C5" (at 128.27 120.65 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22p" (at 129.54 118.11 90)
@@ -4981,7 +5133,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C1") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -4990,7 +5142,7 @@
   (symbol (lib_id "Device:R") (at 281.94 133.604 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f838761-3d49-4e02-9d42-48a0e970f252)
-    (property "Reference" "R16" (at 283.21 136.144 0)
+    (property "Reference" "R12" (at 283.21 136.144 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 280.67 136.144 0)
@@ -5007,7 +5159,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R16") (unit 1)
+          (reference "R12") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 377.952 157.734 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 978707dc-10fb-4613-a2c3-a1486d9528a9)
+    (property "Reference" "#FLG05" (at 376.047 157.734 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 374.396 157.734 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 377.952 157.734 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 377.952 157.734 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b8a8bc2a-6a70-4d88-aac2-ad5f32a9b3a6))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#FLG05") (unit 1)
         )
       )
     )
@@ -5016,7 +5193,7 @@
   (symbol (lib_id "Device:R") (at 203.962 147.32 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 98f26ef0-34c4-48a0-9295-6a84840a9cbd)
-    (property "Reference" "R11" (at 201.422 146.05 0)
+    (property "Reference" "R6" (at 201.422 146.05 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 201.422 148.59 0)
@@ -5033,7 +5210,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R11") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -5042,7 +5219,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 181.864 239.268 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 995c8172-b37f-476a-b0d7-e41ef2ab2531)
-    (property "Reference" "J4" (at 183.134 234.188 0)
+    (property "Reference" "J3" (at 183.134 234.188 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "7-40VDC" (at 178.054 234.188 90)
@@ -5059,7 +5236,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "J4") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -5068,7 +5245,7 @@
   (symbol (lib_id "power:GND") (at 261.366 135.128 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9acfd264-b9ea-4e92-8132-f702d2317335)
-    (property "Reference" "#PWR033" (at 261.366 141.478 0)
+    (property "Reference" "#PWR030" (at 261.366 141.478 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 261.366 140.208 0)
@@ -5084,7 +5261,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -5093,7 +5270,7 @@
   (symbol (lib_id "power:+BATT") (at 50.8 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b0ca1e8-ee30-4c22-891e-884fa0ce8ad1)
-    (property "Reference" "#PWR02" (at 50.8 27.94 0)
+    (property "Reference" "#PWR04" (at 50.8 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 50.8 19.05 0)
@@ -5109,7 +5286,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -5118,7 +5295,7 @@
   (symbol (lib_id "Device:R") (at 312.674 38.862 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9d540f6d-78f7-4788-b443-257a97f27f5f)
-    (property "Reference" "R8" (at 310.134 37.592 0)
+    (property "Reference" "R13" (at 310.134 37.592 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 310.134 40.132 0)
@@ -5135,7 +5312,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R8") (unit 1)
+          (reference "R13") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 40.386 220.472 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9f447c6b-2907-4da2-ac5f-37508af9404c)
+    (property "Reference" "#FLG01" (at 40.386 218.567 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 40.386 215.9 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 40.386 220.472 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 40.386 220.472 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f11bbcf6-a7f1-4559-a072-f1891be192db))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -5144,7 +5346,7 @@
   (symbol (lib_id "power:GND") (at 217.678 250.698 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aa8f66c7-e1b6-497c-8d17-8955cc50e6b5)
-    (property "Reference" "#PWR029" (at 217.678 257.048 0)
+    (property "Reference" "#PWR027" (at 217.678 257.048 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 217.678 255.778 0)
@@ -5160,7 +5362,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -5169,7 +5371,7 @@
   (symbol (lib_id "power:GND") (at 203.962 155.702 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b247f814-dfb0-4f2d-8841-18f6f578a088)
-    (property "Reference" "#PWR031" (at 203.962 162.052 0)
+    (property "Reference" "#PWR023" (at 203.962 162.052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 203.962 160.782 0)
@@ -5185,7 +5387,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -5194,7 +5396,7 @@
   (symbol (lib_id "power:GND") (at 50.8 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b555d1ca-4958-4915-8f5b-208c4017af23)
-    (property "Reference" "#PWR08" (at 50.8 50.8 0)
+    (property "Reference" "#PWR05" (at 50.8 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 50.8 49.53 0)
@@ -5210,7 +5412,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -5219,7 +5421,7 @@
   (symbol (lib_id "Device:R") (at 243.84 243.332 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b8475afd-89b2-4ca5-bd18-6252cabb08e4)
-    (property "Reference" "R10" (at 246.38 244.602 0)
+    (property "Reference" "R8" (at 246.38 244.602 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 246.38 242.062 0)
@@ -5236,7 +5438,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R10") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -5245,7 +5447,7 @@
   (symbol (lib_id "Device:C") (at 47.244 236.982 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bc943284-3b87-4a0d-92cd-a8d6c5dc8a69)
-    (property "Reference" "C8" (at 51.054 235.712 0)
+    (property "Reference" "C1" (at 51.054 235.712 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1uF" (at 51.054 238.252 0)
@@ -5262,7 +5464,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C8") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -5271,7 +5473,7 @@
   (symbol (lib_id "Device:C") (at 130.81 132.08 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c14a3ca0-1ac3-43f9-9852-8ad48aa84cf3)
-    (property "Reference" "C2" (at 127 133.35 90)
+    (property "Reference" "C6" (at 127 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22p" (at 128.27 135.89 90)
@@ -5288,7 +5490,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C2") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -5297,7 +5499,7 @@
   (symbol (lib_id "Device:R") (at 139.192 226.314 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c3d7eb9a-3bcc-43f9-a924-21530fd67c7c)
-    (property "Reference" "R5" (at 141.732 225.044 0)
+    (property "Reference" "R4" (at 141.732 225.044 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 141.732 227.584 0)
@@ -5314,7 +5516,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R5") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -5323,7 +5525,7 @@
   (symbol (lib_id "Isolator_Analog:ACPL-C87B") (at 246.888 146.558 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c58cb0ed-dba7-4c7c-b380-a48b042c1d71)
-    (property "Reference" "U4" (at 246.888 141.224 0)
+    (property "Reference" "U6" (at 246.888 141.224 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "ACPL-C87B" (at 247.396 143.256 0)
@@ -5346,7 +5548,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U4") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -5355,7 +5557,7 @@
   (symbol (lib_id "Device:R") (at 267.97 144.018 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6cde9b9-d2a1-4d80-9ca0-c37578b1478d)
-    (property "Reference" "R13" (at 269.24 141.478 0)
+    (property "Reference" "R9" (at 269.24 141.478 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 266.7 141.478 0)
@@ -5372,7 +5574,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R13") (unit 1)
+          (reference "R9") (unit 1)
         )
       )
     )
@@ -5381,7 +5583,7 @@
   (symbol (lib_id "Regulator_Switching:LM2576HVS-5") (at 69.85 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6ea5199-f695-48a4-93c2-852dd4e8c16a)
-    (property "Reference" "U7" (at 69.85 20.32 0)
+    (property "Reference" "U2" (at 69.85 20.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LM2576HVS-5" (at 69.85 22.86 0)
@@ -5401,7 +5603,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U7") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -5410,7 +5612,7 @@
   (symbol (lib_id "Device:R") (at 279.654 159.766 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c8d8aaca-e4d1-4fb4-a66e-d58228ebf2d9)
-    (property "Reference" "R15" (at 282.194 161.036 0)
+    (property "Reference" "R11" (at 282.194 161.036 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 282.194 158.496 0)
@@ -5427,7 +5629,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "R15") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -5436,7 +5638,7 @@
   (symbol (lib_id "power:+5V") (at 215.646 31.242 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc3a8896-7bd9-4d76-9c8d-7c2fd58d15c0)
-    (property "Reference" "#PWR023" (at 215.646 35.052 0)
+    (property "Reference" "#PWR024" (at 215.646 35.052 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 215.646 26.162 0)
@@ -5452,7 +5654,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -5461,7 +5663,7 @@
   (symbol (lib_id "power:+BATT") (at 30.48 24.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ccf70e3b-c6a0-46b5-ae84-92e3bdf56f28)
-    (property "Reference" "#PWR04" (at 30.48 27.94 0)
+    (property "Reference" "#PWR01" (at 30.48 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+BATT" (at 30.48 19.05 0)
@@ -5477,7 +5679,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5486,7 +5688,7 @@
   (symbol (lib_id "Device:C") (at 50.8 34.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cd4bea47-1778-49cc-ac97-f42426e73734)
-    (property "Reference" "C3" (at 46.99 33.02 0)
+    (property "Reference" "C2" (at 46.99 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 46.99 35.56 0)
@@ -5503,7 +5705,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C3") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -5512,7 +5714,7 @@
   (symbol (lib_id "power:GND") (at 40.386 251.968 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cdde4f46-4ab4-4699-b1ec-6a6d80a432d0)
-    (property "Reference" "#PWR026" (at 40.386 258.318 0)
+    (property "Reference" "#PWR03" (at 40.386 258.318 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 40.386 257.048 0)
@@ -5528,7 +5730,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -5563,7 +5765,7 @@
   (symbol (lib_id "power:GND") (at 30.48 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9f2b72e-ccd6-4b7e-acb8-ae48856e853b)
-    (property "Reference" "#PWR05" (at 30.48 39.37 0)
+    (property "Reference" "#PWR02" (at 30.48 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 30.48 38.1 0)
@@ -5579,7 +5781,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -5617,10 +5819,35 @@
     )
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 377.952 150.622 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid df3cf254-7cb6-4f71-aaab-5e1f728358a6)
+    (property "Reference" "#FLG04" (at 376.047 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 369.57 150.622 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 377.952 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 377.952 150.622 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d4c8f1cb-3940-4eea-9c3a-e01a0ae67d0c))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#FLG04") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 210.566 147.066 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e15ad41c-4df2-441a-8871-b8d779449d20)
-    (property "Reference" "C12" (at 214.376 145.796 0)
+    (property "Reference" "C9" (at 214.376 145.796 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100pF" (at 214.376 148.336 0)
@@ -5637,7 +5864,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C12") (unit 1)
+          (reference "C9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 379.73 137.922 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e1d656c1-fa07-4c71-a31b-efb1d26277a0)
+    (property "Reference" "#PWR038" (at 375.92 137.922 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 386.334 137.922 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 379.73 137.922 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 379.73 137.922 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9f837020-f509-4a94-bf28-2f8b2d8a2c78))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -5652,7 +5904,7 @@
     (property "Value" "LED" (at 106.9975 49.53 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 105.41 54.61 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 105.41 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 105.41 54.61 0)
@@ -5669,10 +5921,35 @@
     )
   )
 
+  (symbol (lib_id "power:GND") (at 379.73 163.83 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e410a449-0738-4552-8846-6b8e8925be95)
+    (property "Reference" "#PWR040" (at 386.08 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 383.286 163.83 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 379.73 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 379.73 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid abc02347-1efd-46ee-b8d2-57b47f265d53))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR040") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:C") (at 124.46 34.29 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e65f0980-33d6-472a-9926-27f2b4545148)
-    (property "Reference" "C5" (at 120.65 33.02 0)
+    (property "Reference" "C4" (at 120.65 33.02 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 120.65 35.56 0)
@@ -5689,7 +5966,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C5") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -5698,7 +5975,7 @@
   (symbol (lib_id "power:+5V") (at 59.69 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7b264c6-6588-4831-8503-7541783b2bc0)
-    (property "Reference" "#PWR010" (at 59.69 92.71 0)
+    (property "Reference" "#PWR06" (at 59.69 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 59.69 83.82 0)
@@ -5714,7 +5991,32 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR06") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 379.73 144.018 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid ee8be1c7-11a7-4957-bfcd-b6f7b57bdc56)
+    (property "Reference" "#PWR039" (at 375.92 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 385.318 144.018 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 379.73 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 379.73 144.018 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9ad6dfbe-742d-42f7-999c-95f55f54c1cf))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -5723,7 +6025,7 @@
   (symbol (lib_id "Device:C") (at 281.94 128.524 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f0429647-d80c-4ec6-bad3-e7c7a9994e6c)
-    (property "Reference" "C16" (at 280.67 124.714 0)
+    (property "Reference" "C15" (at 280.67 124.714 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100pF" (at 283.21 124.714 0)
@@ -5740,7 +6042,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C16") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -5749,7 +6051,7 @@
   (symbol (lib_id "Device:C") (at 254.762 134.366 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f1605e0b-387b-41c5-93fb-49e54365661f)
-    (property "Reference" "C14" (at 253.492 130.556 0)
+    (property "Reference" "C13" (at 253.492 130.556 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 256.032 130.556 0)
@@ -5766,7 +6068,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C14") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -5775,7 +6077,7 @@
   (symbol (lib_id "power:+5V") (at 135.382 217.424 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f1ec9df5-15d4-46e6-8edc-224347ed99f2)
-    (property "Reference" "#PWR018" (at 135.382 221.234 0)
+    (property "Reference" "#PWR016" (at 135.382 221.234 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 135.382 212.344 0)
@@ -5791,7 +6093,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -5800,7 +6102,7 @@
   (symbol (lib_id "Regulator_Linear:AMS1117-3.3") (at 135.89 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f93b1257-ffe0-4625-bc6f-1e12a6a04f1c)
-    (property "Reference" "U6" (at 135.89 22.86 0)
+    (property "Reference" "U4" (at 135.89 22.86 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AMS1117-3.3" (at 135.89 25.4 0)
@@ -5818,7 +6120,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "U6") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -5827,7 +6129,7 @@
   (symbol (lib_id "power:+5V") (at 123.19 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f9b48f1d-99bd-4261-a774-e2ba1208761a)
-    (property "Reference" "#PWR016" (at 123.19 151.13 0)
+    (property "Reference" "#PWR012" (at 123.19 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 123.19 142.24 0)
@@ -5843,7 +6145,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -5852,7 +6154,7 @@
   (symbol (lib_id "power:GND") (at 302.26 44.958 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fbfbb4c3-13e1-45e0-babf-c4f04e71a484)
-    (property "Reference" "#PWR022" (at 302.26 51.308 0)
+    (property "Reference" "#PWR032" (at 302.26 51.308 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 302.26 49.276 0)
@@ -5868,7 +6170,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -5877,7 +6179,7 @@
   (symbol (lib_id "Connector:Micro_SD_Card") (at 365.252 59.182 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fde40f25-9696-446c-9b6c-9e91006b703d)
-    (property "Reference" "J1" (at 365.887 40.132 0)
+    (property "Reference" "J4" (at 365.887 40.132 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Micro_SD_Card" (at 365.887 42.672 0)
@@ -5901,7 +6203,7 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "J1") (unit 1)
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -5910,7 +6212,7 @@
   (symbol (lib_id "Device:C") (at 99.06 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe364d74-89ba-4c9a-97b1-d225c3019484)
-    (property "Reference" "C4" (at 102.87 36.83 0)
+    (property "Reference" "C3" (at 102.87 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1000uF" (at 102.87 39.37 0)
@@ -5927,7 +6229,57 @@
     (instances
       (project "plts-monitoring"
         (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
-          (reference "C4") (unit 1)
+          (reference "C3") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 377.952 163.83 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid fec47962-0f52-4e02-b6c7-42848b5f00cf)
+    (property "Reference" "#FLG06" (at 376.047 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 374.396 163.83 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 377.952 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 377.952 163.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ee1a2ff6-6679-4a7c-b5f1-22323e4725ec))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#FLG06") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 333.248 156.464 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid ffba1ad9-0bb0-42f3-9089-0e1cf07ea937)
+    (property "Reference" "#PWR035" (at 333.248 162.814 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 333.248 161.544 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 333.248 156.464 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 333.248 156.464 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 904bffa2-0af2-470f-a3d4-47285bec1060))
+    (instances
+      (project "plts-monitoring"
+        (path "/766d1dbc-8b07-4f68-b453-e8f5a8eb62fa"
+          (reference "#PWR035") (unit 1)
         )
       )
     )
