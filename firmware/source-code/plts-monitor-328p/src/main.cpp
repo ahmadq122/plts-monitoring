@@ -29,7 +29,7 @@ void setup()
   // Print a message to the LCD.
   lcd.print("Machine Setup...");
   //
-  Serial.begin(9600);
+  Serial.begin(115200);
   Serial.println("Init");
   //
   mData = new MachineData;
@@ -57,23 +57,30 @@ void setup()
 
 void loop()
 {
-  unsigned long previousMillis = 0;
+  unsigned long prevMillisSensor = 0;
+  unsigned long prevMillisLog = 0;
+  const long intervalSensor = 100; // ms
   const long intervalLog = 1000; // ms
   char logText[32];              // yyyy-MM-dd;hh:mm:ss;AA.AA;VV.VV
 
   while (1)
   {
     unsigned long currentMillis = millis();
-    if (currentMillis - previousMillis >= intervalLog)
-    {
-      previousMillis = currentMillis;
 
+    if (currentMillis - prevMillisSensor >= intervalSensor)
+    {
+      prevMillisSensor = currentMillis;
       // Sensor Reading
       current.setSensorValueAdc(analogRead(A0));
       current.routineTask();
       voltage.setSensorValueAdc(analogRead(A1));
       voltage.routineTask();
       //
+    }
+
+    if (currentMillis - prevMillisLog >= intervalLog)
+    {
+      prevMillisLog = currentMillis;
 
       // Data Logging
       char dateStr[11];
