@@ -1,4 +1,5 @@
 /*
+ * PLTS MONITORING
  */
 #include <SPI.h>
 #include <SD.h>
@@ -9,7 +10,7 @@
 #include "Sensor/Sensor.h"
 
 MachineData *mData;
-LiquidCrystal *lcd; 
+LiquidCrystal *lcd;
 Sensor *current;
 Sensor *voltage;
 DS3232RTC *rtc;
@@ -33,7 +34,7 @@ void setup()
   // Serial.println("Init");
   //
   mData = new MachineData;
-  // mData->setMachineData(MachineState_Setup);
+  //
   sensorInit();
   //
   rtcInit();
@@ -45,8 +46,6 @@ void setup()
   lcd->print("      DONE      ");
   delay(1000);
   lcd->clear();
-
-  // mData->setMachineData(MachineState_Loop);
 }
 
 void loop()
@@ -79,8 +78,8 @@ void loop()
       double amps = double(current->getSensorValue()) / 100.0;
       double volts = double(voltage->getSensorValue()) / 100.0;
 
-      snprintf(dateStr, sizeof(dateStr), "%04d-%02d-%02d", year(), month(), day());
-      snprintf(timeStr, sizeof(dateStr), "%02d:%02d:%02d", hour(), minute(), second());
+      sprintf(dateStr, "%04d-%02d-%02d", year(), month(), day());
+      sprintf(timeStr, "%02d:%02d:%02d", hour(), minute(), second());
       dtostrf(amps, 4, 2, ampsStr);
       dtostrf(volts, 4, 2, voltsStr);
 
@@ -105,11 +104,13 @@ void loop()
       //
 
       // Display on LCD
-      char row1Str[16], row2Str[16];
+      char row1Str[17], row2Str[17];
       timeStr[5] = '\0';
       sprintf(row1Str, "%s %s", dateStr, timeStr);
       sprintf(row2Str, "A:%s  V:%s", ampsStr, voltsStr);
+
       lcd->clear();
+      lcd->home();
       lcd->print(row1Str);
       lcd->setCursor(0, 1);
       lcd->print(row2Str);
