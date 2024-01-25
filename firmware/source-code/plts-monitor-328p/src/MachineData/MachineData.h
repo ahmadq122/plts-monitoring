@@ -25,14 +25,14 @@ public:
     uint8_t calculateChecksum(const ee_data &data);
 
     // Member function to get data
-    uint8_t getMachineState() const;
+    // uint8_t getMachineState() const;
     int getSpCurrentSensor(uint8_t point);
     int getSpCurrentSensorAdc(uint8_t point);
     int getSpVoltageSensor(uint8_t point);
     int getSpVoltageSensorAdc(uint8_t point);
 
     // Member function to set data
-    void setMachineData(uint8_t newValue);
+    // void setMachineState(uint8_t newValue);
     void setSpCurrentSensor(uint8_t point, int newValue);
     void setSpCurrentSensorAdc(uint8_t point, int newValue);
     void setSpVoltageSensor(uint8_t point, int newValue);
@@ -41,5 +41,5 @@ public:
 private:
     ee_data m_data;
 
-    uint8_t m_machineState; // Data member of the class
+    // uint8_t m_machineState; // Data member of the class
 };

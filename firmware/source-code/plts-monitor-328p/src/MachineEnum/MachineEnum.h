@@ -1,12 +1,12 @@
 #pragma once
 
 /// @brief  Enum
-enum EnumMachineState
-{
-    MachineState_Setup,
-    MachineState_Loop,
-    MachineState_Stop
-};
+// enum EnumMachineState
+// {
+//     MachineState_Setup,
+//     MachineState_Loop,
+//     MachineState_Stop
+// };
 enum EnumCalibrationPoint
 {
     CalPoint_1,

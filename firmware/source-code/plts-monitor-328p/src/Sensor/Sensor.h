@@ -2,6 +2,8 @@
 #include "Arduino.h"
 #include "../MachineEnum/MachineEnum.h"
 
+// #define MOVINGAVERAGE 20
+
 class Sensor
 {
 public:
@@ -18,25 +20,25 @@ public:
     int getSpSensorValueAdc(uint8_t point) const;
     int getSensorValue() const;
     int getSensorValueAdc() const;
-    bool getMovingAverageEnabled() const;
+    // bool getMovingAverageEnabled() const;
 
     // Member function to set data
     void setSpSensorValue(uint8_t point, int newValue);
     void setSpSensorValueAdc(uint8_t point, int newValue);
     void setSensorValue(int newValue);
     void setSensorValueAdc(int newValue);
-    void setMovingAverageEnabled(bool enable);
+    // void setMovingAverageEnabled(bool enable);
 
 private:
     // Moving Average Filter
-    void _filterMovingAverageAdc();
-    uint32_t m_sensorValueAdcTotal;
-    bool m_movingAverageEnabled;
+    // void _filterMovingAverageAdc();
+    // uint32_t m_sensorValueAdcTotal;
+    // bool m_movingAverageEnabled;
 
     // Data member of the class
     int m_sensorValue;
     int m_sensorValueAdc;
-    int m_sensorValueAdcFiltered;
+    // int m_sensorValueAdcFiltered;
     int m_spSensorValue[CalPoint_Total];
     int m_spSensorValueAdc[CalPoint_Total];
 
@@ -45,5 +47,5 @@ private:
     double m_b[CalPoint_Total - 1];
 
     // Declare a vector of int
-    int *m_sensorValueArray;
+    // int m_sensorValueArray[MOVINGAVERAGE];
 };

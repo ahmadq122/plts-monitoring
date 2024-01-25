@@ -3,15 +3,15 @@
 
 MachineData::MachineData(void)
 {
-    Serial.println("MachineData constructor!");
-    m_machineState = 0;
+    // Serial.println("MachineData constructor!");
+    // m_machineState = 0;
 
     readEeprom();
 }
 
 MachineData::~MachineData()
 {
-    Serial.println("MachineData destructor!");
+    // Serial.println("MachineData destructor!");
 }
 
 void MachineData::updateEeprom()
@@ -71,7 +71,7 @@ uint8_t MachineData::calculateChecksum(const ee_data &data)
     return checksum;
 }
 
-uint8_t MachineData::getMachineState() const { return m_machineState; }
+// uint8_t MachineData::getMachineState() const { return m_machineState; }
 
 int MachineData::getSpCurrentSensor(uint8_t point)
 {
@@ -97,12 +97,12 @@ int MachineData::getSpVoltageSensorAdc(uint8_t point)
     return m_data.spVoltageSensorAdc[point];
 }
 
-void MachineData::setMachineData(uint8_t newValue)
-{
-    if (m_machineState == newValue)
-        return;
-    m_machineState = newValue;
-}
+// void MachineData::setMachineData(uint8_t newValue)
+// {
+//     if (m_machineState == newValue)
+//         return;
+//     m_machineState = newValue;
+// }
 
 void MachineData::setSpCurrentSensor(uint8_t point, int newValue)
 {

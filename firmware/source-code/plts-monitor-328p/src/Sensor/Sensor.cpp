@@ -1,14 +1,12 @@
 #include "Sensor.h"
 
-#define MOVINGAVERAGE 20
-
 Sensor::Sensor(void)
 {
-    Serial.println("Sensor constructor!");
+    // Serial.println("Sensor constructor!");
     m_sensorValue = 0;
     m_sensorValueAdc = 0;
-    m_sensorValueAdcFiltered = 0;
-    m_sensorValueAdcTotal = 0;
+    // m_sensorValueAdcFiltered = 0;
+    // m_sensorValueAdcTotal = 0;
 
     for (uint8_t i = 0; i < CalPoint_Total; i++)
     {
@@ -20,28 +18,18 @@ Sensor::Sensor(void)
         m_m[i] = 0;
         m_b[i] = 0;
     }
-
-    m_movingAverageEnabled = true;
-    // Allocate memory for the dynamic array
-    m_sensorValueArray = new int[MOVINGAVERAGE];
-    for (uint8_t i = 0; i < MOVINGAVERAGE; i++)
-    {
-        m_sensorValueArray[i] = 0;
-    }
 }
 
 Sensor::~Sensor()
 {
-    // Deallocate memory when done
-    delete[] m_sensorValueArray;
-    Serial.println("Sensor destructor!");
+    // Serial.println("Sensor destructor!");
 }
 
 void Sensor::routineTask()
 {
-    _filterMovingAverageAdc();
+    // _filterMovingAverageAdc();
 
-    int sensorAdc = m_sensorValueAdcFiltered;
+    int sensorAdc = m_sensorValueAdc;
     double sensorValue = 0;
 
     if (sensorAdc < m_spSensorValueAdc[CalPoint_1])
@@ -104,10 +92,10 @@ int Sensor::getSensorValueAdc() const
     return m_sensorValueAdc;
 }
 
-bool Sensor::getMovingAverageEnabled() const
-{
-    return m_movingAverageEnabled;
-}
+// bool Sensor::getMovingAverageEnabled() const
+// {
+//     return m_movingAverageEnabled;
+// }
 
 void Sensor::setSpSensorValue(uint8_t point, int newValue)
 {
@@ -137,45 +125,4 @@ void Sensor::setSensorValueAdc(int newValue)
     if (m_sensorValueAdc == newValue)
         return;
     m_sensorValueAdc = newValue;
-}
-
-void Sensor::setMovingAverageEnabled(bool enable)
-{
-    if (m_movingAverageEnabled == enable)
-        return;
-    m_movingAverageEnabled = enable;
-}
-
-void Sensor::_filterMovingAverageAdc()
-{
-    const int adc = m_sensorValueAdc;
-
-    if (m_movingAverageEnabled)
-    {
-        uint32_t adcTotal = 0;
-
-        // Push back the sensor value
-        for (int8_t i = sizeof(m_sensorValueArray) - 1; i >= 0; i--)
-        {
-            if (i > 0)
-            {
-                m_sensorValueArray[i] = m_sensorValueArray[i - 1];
-                adcTotal += m_sensorValueArray[i];
-            }
-            else
-                break;
-        }
-        m_sensorValueArray[0] = adc;
-        adcTotal += m_sensorValueArray[0];
-        m_sensorValueAdcFiltered = round((double)adcTotal / (double)sizeof(m_sensorValueArray));
-    }
-    else
-    {
-        m_sensorValueAdcFiltered = adc;
-    }
-
-    Serial.print("Adc: ");
-    Serial.print(m_sensorValueAdc);
-    Serial.print(" Fil: ");
-    Serial.println(m_sensorValueAdcFiltered);
 }
