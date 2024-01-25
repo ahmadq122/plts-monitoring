@@ -28,7 +28,7 @@ ACPL-C87B
 - 
 
 ## Schematic and PCB design using EDA application (Kicad):
-- Please check kicad foldder
+- Please check kicad folder
 
 ## Create source code for the microcontroller (AVR ATmega 328p)
 - Please check firmware folder
